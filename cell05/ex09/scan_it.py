@@ -4,8 +4,12 @@ from sys import argv
 def main():
     """ scan_it.py """
     if len(argv) == 3:
-        print((argv[2].split(' ')).count(argv[1]))
+        num = (argv[2].split(' ')).count(argv[1])
+        if num > 0:
+            print(num)
+        else:
+            print("none")
     else:
-        print('none')
+        print("none")
 
 main()
